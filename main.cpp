@@ -2,13 +2,15 @@
 #include <string>
 
 #include "stats.h"
+#include "quest.h"
 #include "music.h"
 
-void printUserInfo(Stats playerStats, Music playerMusic);
+void printUserInfo(Stats playerStats, Quest playerQuest, Music playerMusic);
 
 int main(int argc, char const *argv[])
 {
 	Stats playerStats;
+	Quest playerQuest;
 	Music playerMusic;
 
 	playerStats.userName = "userNameTest";
@@ -37,6 +39,165 @@ int main(int argc, char const *argv[])
 	playerStats.farming =  17097317;
 	playerStats.construction = 13192089;
 	playerStats.hunter = 14981882;
+
+	playerQuest.Cooks_Assistant = true;
+	playerQuest.Demon_Slayer = true;
+	playerQuest.The_Restless_Ghost = true;
+	playerQuest.Romeo_and_Juliet = true;
+	playerQuest.Sheep_Shearer = true;
+	playerQuest.Shield_of_Arrav = true;
+	playerQuest.Ernest_the_Chicken = true;
+	playerQuest.Vampyre_Slayer = true;
+	playerQuest.Imp_Catcher = true;
+	playerQuest.Prince_Ali_Rescue = true;
+	playerQuest.Dorics_Quest = true;
+	playerQuest.Black_Knights_Fortress = true;
+	playerQuest.Witchs_Potion = true;
+	playerQuest.The_Knights_Sword = true;
+	playerQuest.Goblin_Diplomacy = true;
+	playerQuest.Pirates_Treasure = true;
+	playerQuest.Dragon_Slayer_I = true;
+	playerQuest.Rune_Mysteries = true;
+	playerQuest.Misthalin_Mystery = true;
+	playerQuest.The_Corsair_Curse = true;
+	playerQuest.X_Marks_the_Spot = true;
+	playerQuest.Below_Ice_Mountain = true;
+	playerQuest.Druidic_Ritual = true;
+	playerQuest.Lost_City = true;
+	playerQuest.Witchs_House = true;
+	playerQuest.Merlins_Crystal = true;
+	playerQuest.Heroes_Quest = true;
+	playerQuest.Scorpion_Catcher = true;
+	playerQuest.Family_Crest = true;
+	playerQuest.Tribal_Totem = true;
+	playerQuest.Fishing_Contest = true;
+	playerQuest.Monks_Friend = true;
+	playerQuest.Temple_of_Ikov = true;
+	playerQuest.Clock_Tower = true;
+	playerQuest.Holy_Grail = true;
+	playerQuest.Tree_Gnome_Village = true;
+	playerQuest.Fight_Arena = true;
+	playerQuest.Hazeel_Cult = true;
+	playerQuest.Sheep_Herder = true;
+	playerQuest.Plague_City = true;
+	playerQuest.Sea_Slug = true;
+	playerQuest.Waterfall_Quest_Biohazard = true;
+	playerQuest.Jungle_Potion = true;
+	playerQuest.The_Grand_Tree = true;
+	playerQuest.Shilo_Village = true;
+	playerQuest.Underground_Pass = true;
+	playerQuest.Observatory_Quest = true;
+	playerQuest.The_Tourist_Trap = true;
+	playerQuest.Watchtower = true;
+	playerQuest.Dwarf_Cannon = true;
+	playerQuest.Murder_Mystery = true;
+	playerQuest.The_Dig_Site = true;
+	playerQuest.Gertrudes_Cat = true;
+	playerQuest.Legends_Quest = true;
+	playerQuest.Big_Chompy_Bird_Hunting = true;
+	playerQuest.Elemental_Workshop_I = true;
+	playerQuest.Priest_in_Peril = true;
+	playerQuest.Nature_Spirit = true;
+	playerQuest.Death_Plateau = true;
+	playerQuest.Troll_Stronghold = true;
+	playerQuest.Tai_Bwo_Wannai_Trio = true;
+	playerQuest.Regicide = true;
+	playerQuest.Eadgars_Ruse = true;
+	playerQuest.Shades_of_Mortton = true;
+	playerQuest.The_Fremennik_Trials = true;
+	playerQuest.Horror_from_the_Deep = true;
+	playerQuest.Throne_of_Miscellania = true;
+	playerQuest.Monkey_Madness_I = true;
+	playerQuest.Haunted_Mine = true;
+	playerQuest.Troll_Romance = true;
+	playerQuest.In_Search_of_the_Myreque = true;
+	playerQuest.Creature_of_Fenkenstrain = true;
+	playerQuest.Roving_Elves = true;
+	playerQuest.Ghosts_Ahoy = true;
+	playerQuest.One_Small_Favour = true;
+	playerQuest.Mountain_Daughter = true;
+	playerQuest.Between_a_Rock = true;
+	playerQuest.The_Feud = true;
+	playerQuest.The_Golem = true;
+	playerQuest.Desert_Treasure = true;
+	playerQuest.Icthlarins_Little_Helper = true;
+	playerQuest.Tears_of_Guthix = true;
+	playerQuest.Zogre_Flesh_Eaters = true;
+	playerQuest.The_Lost_Tribe = true;
+	playerQuest.The_Giant_Dwarf = true;
+	playerQuest.Recruitment_Drive = true;
+	playerQuest.Mournings_End_Part_I = true;
+	playerQuest.Forgettable_Tale = true;
+	playerQuest.Garden_of_Tranquillity = true;
+	playerQuest.A_Tail_of_Two_Cats = true;
+	playerQuest.Wanted = true;
+	playerQuest.Mournings_End_Part_II = true;
+	playerQuest.Rum_Deal = true;
+	playerQuest.Shadow_of_the_Storm = true;
+	playerQuest.Making_History = true;
+	playerQuest.Ratcatchers = true;
+	playerQuest.Spirits_of_the_Elid = true;
+	playerQuest.Devious_Minds = true;
+	playerQuest.The_Hand_in_the_Sand = true;
+	playerQuest.Enakhras_Lament = true;
+	playerQuest.Cabin_Fever = true;
+	playerQuest.Fairytale_I_Growing_Pains = true;
+	playerQuest.Recipe_for_Disaster_Another_Cooks_Quest = true;
+	playerQuest.Recipe_for_Disaster_Defeating_the_Culinaromancer = true;
+	playerQuest.Recipe_for_Disaster_Freeing_the_Mountain_Dwarf = true;
+	playerQuest.Recipe_for_Disaster_Freeing_the_Goblin_generals = true;
+	playerQuest.Recipe_for_Disaster_Freeing_Pirate_Pete = true;
+	playerQuest.Recipe_for_Disaster_Freeing_the_Lumbridge_Guide = true;
+	playerQuest.Recipe_for_Disaster_Freeing_Evil_Dave = true;
+	playerQuest.Recipe_for_Disaster_Freeing_King_Awowogei = true;
+	playerQuest.Recipe_for_Disaster_Freeing_Sir_Amik_Varze = true;
+	playerQuest.Recipe_for_Disaster_Freeing_Skrach_Uglogwee = true;
+	playerQuest.In_Aid_of_the_Myreque = true;
+	playerQuest.A_Souls_Bane = true;
+	playerQuest.Rag_and_Bone_Man_I = true;
+	playerQuest.Swan_Song = true;
+	playerQuest.Royal_Trouble = true;
+	playerQuest.Death_to_the_Dorgeshuun = true;
+	playerQuest.Fairytale_II_Cure_a_Queen = true;
+	playerQuest.Lunar_Diplomacy = true;
+	playerQuest.The_Eyes_of_Glouphrie = true;
+	playerQuest.Darkness_of_Hallowvale = true;
+	playerQuest.The_Slug_Menace = true;
+	playerQuest.Elemental_Workshop_II = true;
+	playerQuest.My_Arms_Big_Adventure = true;
+	playerQuest.Enlightened_Journey = true;
+	playerQuest.Eagles_Peak = true;
+	playerQuest.Animal_Magnetism = true;
+	playerQuest.Contact = true;
+	playerQuest.Cold_War = true;
+	playerQuest.The_Fremennik_Isles = true;
+	playerQuest.Tower_of_Life = true;
+	playerQuest.The_Great_Brain_Robbery = true;
+	playerQuest.What_Lies_Below = true;
+	playerQuest.Olafs_Quest = true;
+	playerQuest.Another_Slice_of_HAM = true;
+	playerQuest.Dream_Mentor = true;
+	playerQuest.Grim_Tales = true;
+	playerQuest.Kings_Ransom = true;
+	playerQuest.Client_of_Kourend = true;
+	playerQuest.Rag_and_Bone_Man_II = true;
+	playerQuest.Bone_Voyage = true;
+	playerQuest.The_Queen_of_Thieves = true;
+	playerQuest.The_Depths_of_Despair = true;
+	playerQuest.Tale_of_the_Righteous = true;
+	playerQuest.A_Taste_of_Hope = true;
+	playerQuest.Making_Friends_with_My_Arm = true;
+	playerQuest.The_Forsaken_Tower = true;
+	playerQuest.The_Ascent_of_Arceuus = true;
+	playerQuest.Song_of_the_Elve = true;
+	playerQuest.The_Fremennik_Exiles = true;
+	playerQuest.Sins_of_the_Father = true;
+	playerQuest.A_Porcine_of_Interest = true;
+	playerQuest.Getting_Ahead = true;
+	playerQuest.A_Night_at_the_Theatre = true;
+	playerQuest.A_Kingdom_Divided = true;
+	playerQuest.Land_of_the_Goblins = true;
+	playerQuest.Temple_of_the_Eye = true;
 
 	playerMusic.Seventh_Realm = true;
 	playerMusic.A_Festive_Party = true;
@@ -722,13 +883,13 @@ int main(int argc, char const *argv[])
 	playerMusic.Zogre_Dance = true;
 	playerMusic.Zombiism = true;
 
-	printUserInfo(playerStats, playerMusic);
+	printUserInfo(playerStats, playerQuest, playerMusic);
 
 	std::cout << "Hello Old School Runescape" << std::endl;
 	return 0;
 }
 
-void printUserInfo(Stats playerStats, Music playerMusic){
+void printUserInfo(Stats playerStats, Quest playerQuest, Music playerMusic){
 	std::cout << "userName: " << playerStats.userName << "\n"
 			  << "style: " << playerStats.style << "\n"
 			  << "membership: " << playerStats.membership << "\n"
@@ -755,6 +916,165 @@ void printUserInfo(Stats playerStats, Music playerMusic){
 			  << "farming: " << playerStats.farming << "\n"
 			  << "construct: " << playerStats.construction << "\n"
 			  << "hunter: " << playerStats.hunter << "\n"
+			  << "Cooks_Assistant:" << playerQuest.Cooks_Assistant << "\n"
+			  << "Demon_Slayer:" << playerQuest.Demon_Slayer << "\n"
+			  << "The_Restless_Ghost:" << playerQuest.The_Restless_Ghost << "\n"
+			  << "Romeo_and_Juliet:" << playerQuest.Romeo_and_Juliet << "\n"
+			  << "Sheep_Shearer:" << playerQuest.Sheep_Shearer << "\n"
+			  << "Shield_of_Arrav:" << playerQuest.Shield_of_Arrav << "\n"
+			  << "Ernest_the_Chicken:" << playerQuest.Ernest_the_Chicken << "\n"
+			  << "Vampyre_Slayer:" << playerQuest.Vampyre_Slayer << "\n"
+			  << "Imp_Catcher:" << playerQuest.Imp_Catcher << "\n"
+			  << "Prince_Ali_Rescue:" << playerQuest.Prince_Ali_Rescue << "\n"
+			  << "Dorics_Quest:" << playerQuest.Dorics_Quest << "\n"
+			  << "Black_Knights_Fortress:" << playerQuest.Black_Knights_Fortress << "\n"
+			  << "Witchs_Potion:" << playerQuest.Witchs_Potion << "\n"
+			  << "The_Knights_Sword:" << playerQuest.The_Knights_Sword << "\n"
+			  << "Goblin_Diplomacy:" << playerQuest.Goblin_Diplomacy << "\n"
+			  << "Pirates_Treasure:" << playerQuest.Pirates_Treasure << "\n"
+			  << "Dragon_Slayer_I:" << playerQuest.Dragon_Slayer_I << "\n"
+			  << "Rune_Mysteries:" << playerQuest.Rune_Mysteries << "\n"
+			  << "Misthalin_Mystery:" << playerQuest.Misthalin_Mystery << "\n"
+			  << "The_Corsair_Curse:" << playerQuest.The_Corsair_Curse << "\n"
+			  << "X_Marks_the_Spot:" << playerQuest.X_Marks_the_Spot << "\n"
+			  << "Below_Ice_Mountain:" << playerQuest.Below_Ice_Mountain << "\n"
+			  << "Druidic_Ritual:" << playerQuest.Druidic_Ritual << "\n"
+			  << "Lost_City:" << playerQuest.Lost_City << "\n"
+			  << "Witchs_House:" << playerQuest.Witchs_House << "\n"
+			  << "Merlins_Crystal:" << playerQuest.Merlins_Crystal << "\n"
+			  << "Heroes_Quest:" << playerQuest.Heroes_Quest << "\n"
+			  << "Scorpion_Catcher:" << playerQuest.Scorpion_Catcher << "\n"
+			  << "Family_Crest:" << playerQuest.Family_Crest << "\n"
+			  << "Tribal_Totem:" << playerQuest.Tribal_Totem << "\n"
+			  << "Fishing_Contest:" << playerQuest.Fishing_Contest << "\n"
+			  << "Monks_Friend:" << playerQuest.Monks_Friend << "\n"
+			  << "Temple_of_Ikov:" << playerQuest.Temple_of_Ikov << "\n"
+			  << "Clock_Tower:" << playerQuest.Clock_Tower << "\n"
+			  << "Holy_Grail:" << playerQuest.Holy_Grail << "\n"
+			  << "Tree_Gnome_Village:" << playerQuest.Tree_Gnome_Village << "\n"
+			  << "Fight_Arena:" << playerQuest.Fight_Arena << "\n"
+			  << "Hazeel_Cult:" << playerQuest.Hazeel_Cult << "\n"
+			  << "Sheep_Herder:" << playerQuest.Sheep_Herder << "\n"
+			  << "Plague_City:" << playerQuest.Plague_City << "\n"
+			  << "Sea_Slug:" << playerQuest.Sea_Slug << "\n"
+			  << "Waterfall_Quest_Biohazard:" << playerQuest.Waterfall_Quest_Biohazard << "\n"
+			  << "Jungle_Potion:" << playerQuest.Jungle_Potion << "\n"
+			  << "The_Grand_Tree:" << playerQuest.The_Grand_Tree << "\n"
+			  << "Shilo_Village:" << playerQuest.Shilo_Village << "\n"
+			  << "Underground_Pass:" << playerQuest.Underground_Pass << "\n"
+			  << "Observatory_Quest:" << playerQuest.Observatory_Quest << "\n"
+			  << "The_Tourist_Trap:" << playerQuest.The_Tourist_Trap << "\n"
+			  << "Watchtower:" << playerQuest.Watchtower << "\n"
+			  << "Dwarf_Cannon:" << playerQuest.Dwarf_Cannon << "\n"
+			  << "Murder_Mystery:" << playerQuest.Murder_Mystery << "\n"
+			  << "The_Dig_Site:" << playerQuest.The_Dig_Site << "\n"
+			  << "Gertrudes_Cat:" << playerQuest.Gertrudes_Cat << "\n"
+			  << "Legends_Quest:" << playerQuest.Legends_Quest << "\n"
+			  << "Big_Chompy_Bird_Hunting:" << playerQuest.Big_Chompy_Bird_Hunting << "\n"
+			  << "Elemental_Workshop_I:" << playerQuest.Elemental_Workshop_I << "\n"
+			  << "Priest_in_Peril:" << playerQuest.Priest_in_Peril << "\n"
+			  << "Nature_Spirit:" << playerQuest.Nature_Spirit << "\n"
+			  << "Death_Plateau:" << playerQuest.Death_Plateau << "\n"
+			  << "Troll_Stronghold:" << playerQuest.Troll_Stronghold << "\n"
+			  << "Tai_Bwo_Wannai_Trio:" << playerQuest.Tai_Bwo_Wannai_Trio << "\n"
+			  << "Regicide:" << playerQuest.Regicide << "\n"
+			  << "Eadgars_Ruse:" << playerQuest.Eadgars_Ruse << "\n"
+			  << "Shades_of_Mortton:" << playerQuest.Shades_of_Mortton << "\n"
+			  << "The_Fremennik_Trials:" << playerQuest.The_Fremennik_Trials << "\n"
+			  << "Horror_from_the_Deep:" << playerQuest.Horror_from_the_Deep << "\n"
+			  << "Throne_of_Miscellania:" << playerQuest.Throne_of_Miscellania << "\n"
+			  << "Monkey_Madness_I:" << playerQuest.Monkey_Madness_I << "\n"
+			  << "Haunted_Mine:" << playerQuest.Haunted_Mine << "\n"
+			  << "Troll_Romance:" << playerQuest.Troll_Romance << "\n"
+			  << "In_Search_of_the_Myreque:" << playerQuest.In_Search_of_the_Myreque << "\n"
+			  << "Creature_of_Fenkenstrain:" << playerQuest.Creature_of_Fenkenstrain << "\n"
+			  << "Roving_Elves:" << playerQuest.Roving_Elves << "\n"
+			  << "Ghosts_Ahoy:" << playerQuest.Ghosts_Ahoy << "\n"
+			  << "One_Small_Favour:" << playerQuest.One_Small_Favour << "\n"
+			  << "Mountain_Daughter:" << playerQuest.Mountain_Daughter << "\n"
+			  << "Between_a_Rock:" << playerQuest.Between_a_Rock << "\n"
+			  << "The_Feud:" << playerQuest.The_Feud << "\n"
+			  << "The_Golem:" << playerQuest.The_Golem << "\n"
+			  << "Desert_Treasure:" << playerQuest.Desert_Treasure << "\n"
+			  << "Icthlarins_Little_Helper:" << playerQuest.Icthlarins_Little_Helper << "\n"
+			  << "Tears_of_Guthix:" << playerQuest.Tears_of_Guthix << "\n"
+			  << "Zogre_Flesh_Eaters:" << playerQuest.Zogre_Flesh_Eaters << "\n"
+			  << "The_Lost_Tribe:" << playerQuest.The_Lost_Tribe << "\n"
+			  << "The_Giant_Dwarf:" << playerQuest.The_Giant_Dwarf << "\n"
+			  << "Recruitment_Drive:" << playerQuest.Recruitment_Drive << "\n"
+			  << "Mournings_End_Part_I:" << playerQuest.Mournings_End_Part_I << "\n"
+			  << "Forgettable_Tale:" << playerQuest.Forgettable_Tale << "\n"
+			  << "Garden_of_Tranquillity:" << playerQuest.Garden_of_Tranquillity << "\n"
+			  << "A_Tail_of_Two_Cats:" << playerQuest.A_Tail_of_Two_Cats << "\n"
+			  << "Wanted:" << playerQuest.Wanted << "\n"
+			  << "Mournings_End_Part_II:" << playerQuest.Mournings_End_Part_II << "\n"
+			  << "Rum_Deal:" << playerQuest.Rum_Deal << "\n"
+			  << "Shadow_of_the_Storm:" << playerQuest.Shadow_of_the_Storm << "\n"
+			  << "Making_History:" << playerQuest.Making_History << "\n"
+			  << "Ratcatchers:" << playerQuest.Ratcatchers << "\n"
+			  << "Spirits_of_the_Elid:" << playerQuest.Spirits_of_the_Elid << "\n"
+			  << "Devious_Minds:" << playerQuest.Devious_Minds << "\n"
+			  << "The_Hand_in_the_Sand:" << playerQuest.The_Hand_in_the_Sand << "\n"
+			  << "Enakhras_Lament:" << playerQuest.Enakhras_Lament << "\n"
+			  << "Cabin_Fever:" << playerQuest.Cabin_Fever << "\n"
+			  << "Fairytale_I_Growing_Pains:" << playerQuest.Fairytale_I_Growing_Pains << "\n"
+			  << "Recipe_for_Disaster_Another_Cooks_Quest:" << playerQuest.Recipe_for_Disaster_Another_Cooks_Quest
+			  << "Recipe_for_Disaster_Defeating_the_Culinaromancer:" << playerQuest.Recipe_for_Disaster_Defeating_the_Culinaromancer
+			  << "Recipe_for_Disaster_Freeing_the_Mountain_Dwarf:" << playerQuest.Recipe_for_Disaster_Freeing_the_Mountain_Dwarf
+			  << "Recipe_for_Disaster_Freeing_the_Goblin_generals:" << playerQuest.Recipe_for_Disaster_Freeing_the_Goblin_generals
+			  << "Recipe_for_Disaster_Freeing_Pirate_Pete:" << playerQuest.Recipe_for_Disaster_Freeing_Pirate_Pete
+			  << "Recipe_for_Disaster_Freeing_the_Lumbridge_Guide:" << playerQuest.Recipe_for_Disaster_Freeing_the_Lumbridge_Guide
+			  << "Recipe_for_Disaster_Freeing_Evil_Dave:" << playerQuest.Recipe_for_Disaster_Freeing_Evil_Dave
+			  << "Recipe_for_Disaster_Freeing_King_Awowogei:" << playerQuest.Recipe_for_Disaster_Freeing_King_Awowogei
+			  << "Recipe_for_Disaster_Freeing_Sir_Amik_Varze:" << playerQuest.Recipe_for_Disaster_Freeing_Sir_Amik_Varze
+			  << "Recipe_for_Disaster_Freeing_Skrach_Uglogwee:" << playerQuest.Recipe_for_Disaster_Freeing_Skrach_Uglogwee
+			  << "In_Aid_of_the_Myreque:" << playerQuest.In_Aid_of_the_Myreque
+			  << "A_Souls_Bane:" << playerQuest.A_Souls_Bane
+			  << "Rag_and_Bone_Man_I:" << playerQuest.Rag_and_Bone_Man_I
+			  << "Swan_Song:" << playerQuest.Swan_Song
+			  << "Royal_Trouble:" << playerQuest.Royal_Trouble
+			  << "Death_to_the_Dorgeshuun:" << playerQuest.Death_to_the_Dorgeshuun
+			  << "Fairytale_II_Cure_a_Queen:" << playerQuest.Fairytale_II_Cure_a_Queen
+			  << "Lunar_Diplomacy:" << playerQuest.Lunar_Diplomacy
+			  << "The_Eyes_of_Glouphrie:" << playerQuest.The_Eyes_of_Glouphrie
+			  << "Darkness_of_Hallowvale:" << playerQuest.Darkness_of_Hallowvale
+			  << "The_Slug_Menace:" << playerQuest.The_Slug_Menace
+			  << "Elemental_Workshop_II:" << playerQuest.Elemental_Workshop_II
+			  << "My_Arms_Big_Adventure:" << playerQuest.My_Arms_Big_Adventure
+			  << "Enlightened_Journey:" << playerQuest.Enlightened_Journey
+			  << "Eagles_Peak:" << playerQuest.Eagles_Peak
+			  << "Animal_Magnetism:" << playerQuest.Animal_Magnetism
+			  << "Contact:" << playerQuest.Contact
+			  << "Cold_War:" << playerQuest.Cold_War
+			  << "The_Fremennik_Isles:" << playerQuest.The_Fremennik_Isles
+			  << "Tower_of_Life:" << playerQuest.Tower_of_Life
+			  << "The_Great_Brain_Robbery:" << playerQuest.The_Great_Brain_Robbery
+			  << "What_Lies_Below:" << playerQuest.What_Lies_Below
+			  << "Olafs_Quest:" << playerQuest.Olafs_Quest
+			  << "Another_Slice_of_HAM:" << playerQuest.Another_Slice_of_HAM
+			  << "Dream_Mentor:" << playerQuest.Dream_Mentor
+			  << "Grim_Tales:" << playerQuest.Grim_Tales
+			  << "Kings_Ransom:" << playerQuest.Kings_Ransom
+			  << "Client_of_Kourend:" << playerQuest.Client_of_Kourend
+			  << "Rag_and_Bone_Man_II:" << playerQuest.Rag_and_Bone_Man_II
+			  << "Bone_Voyage:" << playerQuest.Bone_Voyage
+			  << "The_Queen_of_Thieves:" << playerQuest.The_Queen_of_Thieves
+			  << "The_Depths_of_Despair:" << playerQuest.The_Depths_of_Despair
+			  << "Dragon_Slayer_I:" << playerQuest.Dragon_Slayer_I
+			  << "Tale_of_the_Righteous:" << playerQuest.Tale_of_the_Righteous
+			  << "A_Taste_of_Hope:" << playerQuest.A_Taste_of_Hope
+			  << "Making_Friends_with_My_Arm:" << playerQuest.Making_Friends_with_My_Arm
+			  << "The_Forsaken_Tower:" << playerQuest.The_Forsaken_Tower
+			  << "The_Ascent_of_Arceuus:" << playerQuest.The_Ascent_of_Arceuus
+			  << "Song_of_the_Elve:" << playerQuest.Song_of_the_Elve
+			  << "The_Fremennik_Exiles:" << playerQuest.The_Fremennik_Exiles
+			  << "Sins_of_the_Father:" << playerQuest.Sins_of_the_Father
+			  << "A_Porcine_of_Interest:" << playerQuest.A_Porcine_of_Interest
+			  << "Getting_Ahead:" << playerQuest.Getting_Ahead
+			  << "A_Night_at_the_Theatre:" << playerQuest.A_Night_at_the_Theatre
+			  << "A_Kingdom_Divided:" << playerQuest.A_Kingdom_Divided
+			  << "Land_of_the_Goblins:" << playerQuest.Land_of_the_Goblins
+			  << "Temple_of_the_Eye:" << playerQuest.Temple_of_the_Eye
 			  << "Seventh_Realm: " << playerMusic.Seventh_Realm << "\n"
 			  << "A_Festive_Party: " << playerMusic.A_Festive_Party << "\n"
 			  << "Adventure: " << playerMusic.Adventure << "\n"
