@@ -1,10 +1,16 @@
 #include <iostream>
 #include <string>
+
 #include "stats.h"
+
+void printUserInfo(Stats player);
 
 int main(int argc, char const *argv[])
 {
 	Stats player;
+	player.userName = "userNameTest";
+	player.style = "Normal";
+	player.membership = true;
 	player.attack = 23977290;
 	player.strength = 23822214;
 	player.defence =  20285467;
@@ -29,6 +35,13 @@ int main(int argc, char const *argv[])
 	player.construction = 13192089;
 	player.hunter = 14981882;
 
+	printUserInfo(player);
+
+	std::cout << "Hello Old School Runescape!" << std::endl;
+	return 0;
+}
+
+void printUserInfo(Stats player){
 	std::cout << "userName: " << player.userName << "\n"
 			  << "style: " << player.style << "\n"
 			  << "membership: " << player.membership << "\n"
@@ -56,7 +69,4 @@ int main(int argc, char const *argv[])
 			  << "construct: " << player.construction << "\n"
 			  << "hunter: " << player.hunter << "\n"
 			  << std::endl;
-
-	std::cout << "Hello Old School Runescape!" << std::endl;
-	return 0;
 }
