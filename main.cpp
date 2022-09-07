@@ -4,14 +4,16 @@
 #include "stats.h"
 #include "quest.h"
 #include "music.h"
+#include "pets.h"
 
-void printUserInfo(Stats playerStats, Quest playerQuest, Music playerMusic);
+void printUserInfo(Stats playerStats, Quest playerQuest, Music playerMusic, Pets playerPets);
 
 int main(int argc, char const *argv[])
 {
 	Stats playerStats;
 	Quest playerQuest;
 	Music playerMusic;
+	Pets playerPets;
 
 	playerStats.userName = "userNameTest";
 	playerStats.style = "Normal";
@@ -883,13 +885,63 @@ int main(int argc, char const *argv[])
 	playerMusic.Zogre_Dance = true;
 	playerMusic.Zombiism = true;
 
-	printUserInfo(playerStats, playerQuest, playerMusic);
+	playerPets.Abyssal_Orphan = false;
+	playerPets.Baby_Mole = false;
+	playerPets.Callisto_Cub = false;
+	playerPets.Hellpuppy = false;
+	playerPets.Ikkle_Hydra = false;
+	playerPets.Jal_Nib_Rek = false;
+	playerPets.Kalphite_Princess = false;
+	playerPets.Lil_Zik = false;
+	playerPets.Little_Nightmare = false;
+	playerPets.Nexling = false;
+	playerPets.Noon = false;
+	playerPets.Olmet = false;
+	playerPets.Pet_Chaos_Elemental = false;
+	playerPets.Pet_Dagannoth_Prime = false;
+	playerPets.Pet_Dagannoth_Rex = false;
+	playerPets.Pet_Dagannoth_Supreme = false;
+	playerPets.Pet_Dark_Core = false;
+	playerPets.Pet_General_Graardor = false;
+	playerPets.Pet_Kirl_Tsutsaroth = false;
+	playerPets.Pet_Kraken = true;
+	playerPets.Pet_Kreeaara = false;
+	playerPets.Pet_Smoke_Devil = true;
+	playerPets.Pet_Snakeling = true;
+	playerPets.Pet_Zilyana = false;
+	playerPets.Prince_Black_Dragon = false;
+	playerPets.Scorpias_Offspring = false;
+	playerPets.Skotos = true;
+	playerPets.Sraracha = false;
+	playerPets.Tzrek_Jad = false;
+	playerPets.Venenatis_Spiderling = false;
+	playerPets.Vetion_Jr = false;
+	playerPets.Vorki = false;
+	playerPets.Baby_Chinchompa = false;
+	playerPets.Beaver = false;
+	playerPets.Giant_Squirrel = true;
+	playerPets.Heron = true;
+	playerPets.Rift_Guardian = false;
+ 	playerPets.Rocky = false;
+	playerPets.Tangleroot = false;
+	playerPets.Bloodhound = false;
+	playerPets.Chompy_Chick = true;
+	playerPets.Herbi = false;
+	playerPets.Lil_Creator = false;
+	playerPets.Pet_Penance_Queen = false;
+	playerPets.Phoenix = false;
+	playerPets.Tiny_Tempor = false;
+	playerPets.Youngllef = false;
+	playerPets.Smolcano = false;
+	playerPets.Abyssal_Protector = false;
+
+	printUserInfo(playerStats, playerQuest, playerMusic, playerPets);
 
 	std::cout << "Hello Old School Runescape" << std::endl;
 	return 0;
 }
 
-void printUserInfo(Stats playerStats, Quest playerQuest, Music playerMusic){
+void printUserInfo(Stats playerStats, Quest playerQuest, Music playerMusic, Pets playerPets){
 	std::cout << "userName: " << playerStats.userName << "\n"
 			  << "style: " << playerStats.style << "\n"
 			  << "membership: " << playerStats.membership << "\n"
@@ -1758,5 +1810,54 @@ void printUserInfo(Stats playerStats, Quest playerQuest, Music playerMusic){
 			  << "Zealot: " << playerMusic.Zealot << "\n"
 			  << "Zogre_Dance: " << playerMusic.Zogre_Dance << "\n"
 			  << "Zombiism: " << playerMusic.Zombiism << "\n"
+			  << "Abyssal_Orphan: " << playerPets.Abyssal_Orphan << "\n"
+			  << "Baby_Mole: " << playerPets.Baby_Mole << "\n"
+			  << "Callisto_Cub: " << playerPets.Callisto_Cub << "\n"
+			  << "Hellpuppy: " << playerPets.Hellpuppy << "\n"
+			  << "Ikkle_Hydra: " << playerPets.Ikkle_Hydra << "\n"
+			  << "Jal_Nib_Rek: " << playerPets.Jal_Nib_Rek << "\n"
+			  << "Kalphite_Princess: " << playerPets.Kalphite_Princess << "\n"
+			  << "Lil_Zik: " << playerPets.Lil_Zik << "\n"
+			  << "Little_Nightmare: " << playerPets.Little_Nightmare << "\n"
+			  << "Nexling: " << playerPets.Nexling << "\n"
+			  << "Noon: " << playerPets.Noon << "\n"
+			  << "Olmet: " << playerPets.Olmet << "\n"
+			  << "Pet_Chaos_Elemental: " << playerPets.Pet_Chaos_Elemental << "\n"
+			  << "Pet_Dagannoth_Prime: " << playerPets.Pet_Dagannoth_Prime << "\n"
+			  << "Pet_Dagannoth_Rex: " << playerPets.Pet_Dagannoth_Rex << "\n"
+			  << "Pet_Dagannoth_Supreme: " << playerPets.Pet_Dagannoth_Supreme << "\n"
+			  << "Pet_Dark_Core: " << playerPets.Pet_Dark_Core << "\n"
+			  << "Pet_General_Graardor: " << playerPets.Pet_General_Graardor << "\n"
+			  << "Pet_Kirl_Tsutsaroth: " << playerPets.Pet_Kirl_Tsutsaroth << "\n"
+			  << "Pet_Kraken: " << playerPets.Pet_Kraken << "\n"
+			  << "Pet_Kreeaara: " << playerPets.Pet_Kreeaara << "\n"
+			  << "Pet_Smoke_Devil: " << playerPets.Pet_Smoke_Devil << "\n"
+			  << "Pet_Snakeling: " << playerPets.Pet_Snakeling << "\n"
+			  << "Pet_Zilyana: " << playerPets.Pet_Zilyana << "\n"
+			  << "Prince_Black_Dragon: " << playerPets.Prince_Black_Dragon << "\n"
+			  << "Scorpias_Offspring: " << playerPets.Scorpias_Offspring << "\n"
+			  << "Skotos: " << playerPets.Skotos << "\n"
+			  << "Sraracha: " << playerPets.Sraracha << "\n"
+			  << "Tzrek_Jad: " << playerPets.Tzrek_Jad << "\n"
+			  << "Venenatis_Spiderling: " << playerPets.Venenatis_Spiderling << "\n"
+			  << "Vetion_Jr: " << playerPets.Vetion_Jr << "\n"
+			  << "Vorki: " << playerPets.Vorki << "\n"
+			  << "Baby_Chinchompa: " << playerPets.Baby_Chinchompa << "\n"
+			  << "Beaver: " << playerPets.Beaver << "\n"
+			  << "Giant_Squirrel: " << playerPets.Giant_Squirrel << "\n"
+			  << "Heron: " << playerPets.Heron << "\n"
+			  << "Rift_Guardian: " << playerPets.Rift_Guardian << "\n"
+			  << "Rocky: " << playerPets.Rocky << "\n"
+			  << "Tangleroot: " << playerPets.Tangleroot << "\n"
+			  << "Bloodhound: " << playerPets.Bloodhound << "\n"
+			  << "Chompy_Chick: " << playerPets.Chompy_Chick << "\n"
+			  << "Herbi: " << playerPets.Herbi << "\n"
+			  << "Lil_Creator: " << playerPets.Lil_Creator << "\n"
+			  << "Pet_Penance_Queen: " << playerPets.Pet_Penance_Queen << "\n"
+			  << "Phoenix: " << playerPets.Phoenix << "\n"
+			  << "Tiny_Tempor: " << playerPets.Tiny_Tempor << "\n"
+			  << "Youngllef: " << playerPets.Youngllef << "\n"
+			  << "Smolcano: " << playerPets.Smolcano << "\n"
+			  << "Abyssal_Protector: " << playerPets.Abyssal_Protector << "\n"
 			  << std::endl;
 }
